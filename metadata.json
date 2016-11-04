@@ -1,0 +1,13 @@
+{
+    "name": "Embed",
+    "uri": "https://github.com/gurjyot/q2a-embed",
+    "description": "Embed Video, Images and MP3 files",
+    "version": "0.1b3",
+    "date": "2011-07-30",
+    "author": "NoahY (extended by Gurjyot Singh)",
+    "author_uri": "http://www.question2answer.org/qa/user/Gurjyot+Singh",
+    "license": "GPLv2",
+    "update_uri": "https://github.com/gurjyot/q2a-embed/master/metadata.json",
+    "min_q2a": "1.7",
+    "min_php": "5.2"
+}
