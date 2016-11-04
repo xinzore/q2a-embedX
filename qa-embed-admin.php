@@ -36,8 +36,6 @@
 		
 		if (qa_clicked('embed_save')) {
 			qa_opt('embed_enable',(bool)qa_post_text('embed_enable'));
-			qa_opt('embed_video_width',qa_post_text('embed_video_width'));
-			qa_opt('embed_video_height',qa_post_text('embed_video_height'));
 			qa_opt('embed_enable_img',(bool)qa_post_text('embed_enable_img'));
 			qa_opt('embed_image_width',qa_post_text('embed_image_width'));
 			qa_opt('embed_image_height',qa_post_text('embed_image_height'));
@@ -69,19 +67,7 @@
 			'tags' => 'NAME="embed_enable"',
 			'value' => qa_opt('embed_enable'),
 			'type' => 'checkbox',
-		);
-	    $fields[] = array(
-			'label' => 'Embeded video width',
-			'type' => 'number',
-			'value' => qa_opt('embed_video_width'),
-			'tags' => 'NAME="embed_video_width"',
-	    );                    
-	    $fields[] = array(
-			'label' => 'Embeded video height',
-			'type' => 'number',
-			'value' => qa_opt('embed_video_height'),
-			'tags' => 'NAME="embed_video_height"',
-	    );                    
+		);                  
             
 		$fields[] = array(
 			'type' => 'blank',

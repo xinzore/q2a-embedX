@@ -1,4 +1,5 @@
 <?php
+echo '<link href="'.QA_HTML_THEME_LAYER_URLTOROOT.'qa-embed.css" rel="stylesheet">';
 
 	class qa_html_theme_layer extends qa_html_theme_base {
 
@@ -36,10 +37,6 @@
 
 		function embed_replace($text) {
 			
-			$w  = qa_opt('embed_video_width');
-			
-			$h = qa_opt('embed_video_height');
-			
 			$w2 = qa_opt('embed_image_width');
 			
 			$h2 = qa_opt('embed_image_height');
@@ -48,28 +45,28 @@
 				'youtube'=>array(
 					array(
 						'https{0,1}:\/\/w{0,3}\.*youtube\.com\/watch\?\S*v=([A-Za-z0-9_-]+)[^< ]*',
-						'<iframe width="'.$w.'" height="'.$h.'" src="http://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe>'
+						'<div class="videoWrapper"><iframe width="560" height="349" src="http://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe></div>'
 					),
 					array(
 						'https{0,1}:\/\/w{0,3}\.*youtu\.be\/([A-Za-z0-9_-]+)[^< ]*',
-						'<iframe width="'.$w.'" height="'.$h.'" src="http://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe>'
+						'<div class="videoWrapper"><iframe width="560" height="349" src="http://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe></div>'
 					)
 				),
 				'vimeo'=>array(
 					array(
 						'https{0,1}:\/\/w{0,3}\.*vimeo\.com\/([0-9]+)[^< ]*',
-						'<iframe src="http://player.vimeo.com/video/$1?title=0&amp;byline=0&amp;portrait=0&amp;wmode=transparent" width="'.$w.'" height="'.$h.'" frameborder="0"></iframe>')
+						'<div class="videoWrapper"><iframe src="http://player.vimeo.com/video/$1?title=0&amp;byline=0&amp;portrait=0&amp;wmode=transparent" class="embed-video" frameborder="0"></iframe></div>')
 				),
 				'metacafe'=>array(
 					array(
 						'https{0,1}:\/\/w{0,3}\.*metacafe\.com\/watch\/([0-9]+)\/([a-z0-9_]+)[^< ]*',
-						'<embed flashVars="playerVars=showStats=no|autoPlay=no" src="http://www.metacafe.com/fplayer/$1/$2.swf" width="'.$w.'" height="'.$h.'" wmode="transparent" allowFullScreen="true" allowScriptAccess="always" name="Metacafe_$1" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>'
+						'<div class="videoWrapper"><embed flashVars="playerVars=showStats=no|autoPlay=no" src="http://www.metacafe.com/fplayer/$1/$2.swf" class="embed-video" wmode="transparent" allowFullScreen="true" allowScriptAccess="always" name="Metacafe_$1" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed></div>'
 					)
 				),
 				'dailymotion'=>array(
 					array(
 						'https{0,1}:\/\/w{0,3}\.*dailymotion\.com\/video\/([A-Za-z0-9]+)[^< ]*',
-						'<iframe frameborder="0" width="'.$w.'" height="'.$h.'" src="http://www.dailymotion.com/embed/video/$1?wmode=transparent"></iframe>'
+						'<div class="videoWrapper"><iframe frameborder="0" class="embed-video" src="http://www.dailymotion.com/embed/video/$1?wmode=transparent"></iframe></div>'
 					)
 				),
 				'image'=>array(
