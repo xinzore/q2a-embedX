@@ -7,7 +7,7 @@
     "author": "NoahY (extended by Gurjyot Singh)",
     "author_uri": "http://www.question2answer.org/qa/user/Gurjyot+Singh",
     "license": "GPLv2",
-    "update_uri": "https://github.com/gurjyot/q2a-embed/master/metadata.json",
+    "update_uri": "https://raw.githubusercontent.com/gurjyot/q2a-embed/master/metadata.json",
     "min_q2a": "1.7",
     "min_php": "5.2"
 }
