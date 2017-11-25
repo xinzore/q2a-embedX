@@ -15,7 +15,7 @@
 		case 'embed_thickbox_thumb':
 		    return 64;
 		case 'embed_mp3_player_code':
-		    return '<object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_mini.swf" width="200" height="20"><param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_mini.swf" /><param name="bgcolor" value="#000000" /><param name="FlashVars" value="mp3=$1" /></object>';
+		    return '<object type="application/x-shockwave-flash" data="player_mp3_maxi.swf" width="200" height="20"><param name="movie" value="player_mp3_maxi.swf" /><param name="FlashVars" value="mp3=test.mp3" /></object>';
 		default:
 		    return null;				
 	    }

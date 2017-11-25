@@ -1,5 +1,4 @@
 <?php
-echo '<link href="'.QA_HTML_THEME_LAYER_URLTOROOT.'qa-embed.css" rel="stylesheet">';
 
 	class qa_html_theme_layer extends qa_html_theme_base {
 
@@ -11,7 +10,14 @@ echo '<link href="'.QA_HTML_THEME_LAYER_URLTOROOT.'qa-embed.css" rel="stylesheet
 			if(qa_opt('embed_enable_thickbox')) { 
 				$this->output('<script type="text/javascript" src="'.QA_HTML_THEME_LAYER_URLTOROOT.'thickbox.js"></script>');
 				$this->output('<link rel="stylesheet" href="'.QA_HTML_THEME_LAYER_URLTOROOT.'thickbox.css" type="text/css" media="screen" />');
+				
 			}
+		}
+		function head_css() // add a FontAwesome CSS file from plugin CDN
+		{
+				$this->output('<link href="'.QA_HTML_THEME_LAYER_URLTOROOT.'qa-embed.css" rel="stylesheet">');
+
+				parent::head_css();
 		}
 		function q_view_content($q_view)
 		{
