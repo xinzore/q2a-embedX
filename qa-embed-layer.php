@@ -51,11 +51,11 @@
 				'youtube'=>array(
 					array(
 						'https{0,1}:\/\/w{0,3}\.*youtube\.com\/watch\?\S*v=([A-Za-z0-9_-]+)[^< ]*',
-						'<div class="videoWrapper"><iframe width="560" height="349" src="http://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe></div>'
+						'<div class="videoWrapper"><iframe width="560" height="349" src="https://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe></div>'
 					),
 					array(
 						'https{0,1}:\/\/w{0,3}\.*youtu\.be\/([A-Za-z0-9_-]+)[^< ]*',
-						'<div class="videoWrapper"><iframe width="560" height="349" src="http://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe></div>'
+						'<div class="videoWrapper"><iframe width="560" height="349" src="https://www.youtube.com/embed/$1?wmode=transparent" frameborder="0" allowfullscreen></iframe></div>'
 					)
 				),
 				'vimeo'=>array(
