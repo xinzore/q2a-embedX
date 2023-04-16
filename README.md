@@ -30,15 +30,15 @@ Features
 ------------
 Installation
 ------------
-#. Install Question2Answer_
-#. Get the source code for this plugin from github_, either using git_, or downloading directly:
+1. Install Question2Answer_
+2. Get the source code for this plugin from github_, either using git_, or downloading directly:
 
    - To download using git, install git and then type 
      ``git clone git://github.com/xinzore/q2a-embedX.git embed``
      at the command prompt (on Linux, Windows is a bit different)
    - To download directly, go to the `project page`_ and click **Download**
 
-#. navigate to your site, go to **Admin -> Plugins** on your q2a install and select the '**Enable Video Embedding**' option, then '**Save**'.
+3. navigate to your site, go to **Admin -> Plugins** on your q2a install and select the '**Enable Video Embedding**' option, then '**Save**'.
 <img src="https://i.imgur.com/ic2JCag.png"/>
 
 .. _Question2Answer: http://www.question2answer.org/install.php
