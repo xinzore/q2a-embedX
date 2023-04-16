@@ -43,7 +43,7 @@ Installation
 .. _Question2Answer: http://www.question2answer.org/install.php
 .. _git: http://git-scm.com/
 .. _github:
-.. _project page: https://github.com/NoahY/q2a-embed
+.. _project page: https://github.com/xinzore/q2a-embedX
 
 ----------
 Disclaimer
