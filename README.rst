@@ -39,7 +39,7 @@ Installation
    - To download directly, go to the `project page`_ and click **Download**
 
 #. navigate to your site, go to **Admin -> Plugins** on your q2a install and select the '**Enable Video Embedding**' option, then '**Save**'.
-<img src="https://i.imgur.com/ic2JCag.png" width="128" height="128" style="display: block; margin: 0 auto"/>
+<img src="https://i.imgur.com/ic2JCag.png"/>
 
 .. _Question2Answer: http://www.question2answer.org/install.php
 .. _git: http://git-scm.com/
