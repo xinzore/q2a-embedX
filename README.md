@@ -41,6 +41,7 @@ Installation
 <img src="https://i.imgur.com/ic2JCag.png"/>
 
 Project page: https://github.com/xinzore/q2a-embedX
+Forked from https://github.com/NoahY/q2a-embed
 
 ----------
 Disclaimer
