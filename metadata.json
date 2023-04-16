@@ -1,14 +1,14 @@
 {
     "name": "Embed",
-    "uri": "https://github.com/gurjyot/q2a-embed",
-    "description": "Embed Video, Images and MP3 files",
-    "version": "0.1b4",
-    "date": "2011-07-30",
+    "uri": "https://github.com/xinzore/q2a-embedX",
+    "description": "Embed Video, Youtube, Twitter, İnstagram, Tiktok,Vimeo, DailyMotion, Facebook Images and MP3 files",
+    "version": "1.0",
+    "date": "2023-04-16",
     "author": "NoahY (extended by Gurjyot Singh)",
-    "author_uri": "http://www.question2answer.org/qa/user/Gurjyot+Singh",
+    "author_uri": "https://github.com/xinzore",
     "license": "GPLv2",
     "update_uri": "https://raw.githubusercontent.com/gurjyot/q2a-embed/master/metadata.json",
     "min_q2a": "1.7",
-    "min_php": "5.2",
+    "min_php": "7.4",
     "load_order": "after_db_init"
 }
