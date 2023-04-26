@@ -24,7 +24,7 @@ Features
 - switch on and off via admin/plugins
 - set width and height via admin/plugins
 
-Thickbox: https://codylindley.com/thickbox/
+Thickbox: https://github.com/lokesh/lightbox2
 
 ------------
 Installation
