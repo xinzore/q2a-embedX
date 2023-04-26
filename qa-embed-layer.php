@@ -8,9 +8,8 @@
 		{
 			qa_html_theme_base::head_custom();
 			if(qa_opt('embed_enable_thickbox')) { 
-				$this->output('<script type="text/javascript" src="'.QA_HTML_THEME_LAYER_URLTOROOT.'jquery.min.js"></script>');
-				$this->output('<script type="text/javascript" src="'.QA_HTML_THEME_LAYER_URLTOROOT.'thickbox.js"></script>');
-				$this->output('<link rel="stylesheet" href="'.QA_HTML_THEME_LAYER_URLTOROOT.'thickbox.css" type="text/css" media="screen" />');
+				$this->output('<script type="text/javascript" src="'.QA_HTML_THEME_LAYER_URLTOROOT.'dist/js/lightbox-plus-jquery.js"></script>');
+				$this->output('<link rel="stylesheet" href="'.QA_HTML_THEME_LAYER_URLTOROOT.'dist/css/lightbox.css" type="text/css" media="screen" />');
 				
 			}
 		}
@@ -155,7 +154,7 @@
 						preg_match_all('/'.$r[0].'/',$text,$imga);
 						if(!empty($imga)) {
 							foreach($imga[1] as $img) {
-								$replace = '<a href="'.$img.'" class="thickbox"><img  src="'.$img.'" style="max-width:'.$w2.'px;max-height:'.$h2.'px" /></a>';
+								$replace = '<a href="'.$img.'" data-lightbox="xinzore" class="thickbox"><img  src="'.$img.'" style="max-width:'.$w2.'px;max-height:'.$h2.'px" /></a>';
 								$text = preg_replace('|<a[^>]+>'.$img.'</a>|i',$replace,$text);
 								$text = preg_replace('|(?<![\'"=])'.$img.'|i',$replace,$text);
 							}
