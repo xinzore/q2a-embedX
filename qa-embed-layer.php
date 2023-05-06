@@ -130,7 +130,7 @@
 				'mp4'=>array(
 					array(
 						'(https*:\/\/[-\%_\/.a-zA-Z0-9]+\.mp4)[^< ]*',
-						'<div><video width="100%" controls><source src="$1" type="video/mp4">Your browser does not support HTML video.</video></div>'
+						'<div><video width="100%" class="zort" controls><source src="$1" type="video/mp4">Your browser does not support HTML video.</video></div>'
 					)
 				),
 				'mp3'=>array(
